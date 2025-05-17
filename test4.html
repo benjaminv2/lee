@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李國鼎故居官網</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #f5f5f5;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .content {
+            margin-top: 3rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f5f5f5;
+            margin-top: 3rem;
+        }
+        :root {
+  --grid-columns: 12;
+  --gutter: 1rem;
+  --max-width: 1320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --primary-color: #333;
+  --text-color: #333;
+  --bg-color: #fff;
+}
+/* 列寬度類 */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  width: 100%;  
+  background-color: green;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--gutter);
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 var(--gutter);
+}
+    </style>
+</head>
+<body><div class="container grid">
+    <div class="col-5">
+    <header>
+        <h1>李國鼎故居官網</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">歷史沿革</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>歡迎來到李國鼎故居</h2>
+            <p>這裡是台灣重要的歷史文化遺產</p>
+        </section>
+
+        <section class="content">
+            <h3>最新消息</h3>
+            <div class="news">
+                <p>最新活動資訊將在此更新</p>
+            </div>
+        </section>
+    </main>
+</div></div></div>
+    <footer>
+        <p>版權所有 © 2025 李國鼎故居官網</p>
+    </footer>
+</body>
+</html>
