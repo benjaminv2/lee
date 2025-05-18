@@ -60,8 +60,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background: var(--bg-color);
-
+  background: #ffffff;
 }
 
 html { font-size: 12px; }
@@ -106,7 +105,7 @@ img {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--gutter);
-  width: 100%;  
+  width: 100%;
 }
 
 .container-fluid {
@@ -251,6 +250,7 @@ blockquote {
   z-index: 1000;
   border-radius: 5px;
   align-content: center;
+  background: #fff;
 }
 
 .hamburger span {
@@ -277,8 +277,8 @@ blockquote {
 }
 
 .hover-div {
-  background-color: #ffffff;
-  color: white;
+  /* background-color: #ffffff; */
+  /* color: white; */
   text-align: center;
   cursor: pointer;
   z-index: 3;
@@ -296,7 +296,7 @@ blockquote {
   position: fixed;
   top: 0;
   width: 100%;
-  color: white;
+  /* color: white; */
   padding: 10px 0;
   z-index: 1000;
   text-align: center;
@@ -771,28 +771,54 @@ aside {
   .visual_info >div:nth-child(2){display: block!important;}
   .visual_info{padding: 20px 0;background-color: unset;}
   .visual_intro {
-  margin: -80px 0 0 10%;
+  margin: -80px 0 0 0;
   clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 100%, 0 100%);
   justify-content: start;
-  padding: 120px 20px;
+  padding: 80px 40px;
   flex-wrap: wrap;
   z-index: 2;
   position: relative;
 }
 .index_news{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .index_visual>.container{
 justify-content: center;}
 .visual img{
-  aspect-ratio: 4/3;
+  aspect-ratio: 2/2.6;
   z-index: 99;
   object-fit: cover;
   object-position: bottom;
-
 }
- 
+ .hover-div{
+  /* background-color: #fff; */
+  top: 30px;
+  right: 10px;
+ }
+ .carousel-banner{
+  aspect-ratio: 1.7/1;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 0;
+ }
+ .c-fix{
+  padding: 0;
+  width: 100%;
+ }
+ .index_news_title{
+  font-size: 1.2rem;
+ }
+ .index_news_content{
+  font-size: 1.2rem;
+ }
+ .index_news_title, .index_news_content{
+  border-left: 6px solid #45B1BE;
+  padding-left: 0.5rem;
+ }
+ .footer{margin-top: 50px;;min-height: 50vh;}
+ .footer_logo img{width: 50%}
+ .footer_menu,.footer_button{display: none;}
 }
 
 @media (min-width:var(--breakpoint-md)) {
@@ -851,7 +877,7 @@ justify-content: center;}
   </header>
 
   <!-- banner -->
-  <div class="container grid">
+  <div class="container grid c-fix">
     <div class="col-12">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">     
       <div class="carousel-inner">
@@ -936,7 +962,7 @@ justify-content: center;}
     <div class="container-fluid index_visual">
       <div class="container grid">
       <section class="col-6 col-lg-12 visual"><img src="images/index_visual.png" alt=""></section>
-      <section class="col-6 col-lg-11 visual_intro">
+      <section class="col-6 col-lg-12 visual_intro">
         <h1>李國鼎故居</h1>
         <h4 class="w4">
           興建於1935年，原日據時期總督府交通局遞信部部長宿舍，戰後改為臺灣省政府財政廳長宿舍。
@@ -1109,4 +1135,10 @@ email：ktli@ktli.org.tw</p>
 		<script data-brackets-id='83702' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
 		<script data-brackets-id='88256' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
 		<script data-brackets-id='99572' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='101670' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='102518' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='105287' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='106142' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='107002' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='110674' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
 		<script src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
