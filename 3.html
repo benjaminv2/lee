@@ -149,12 +149,12 @@ img {
   .col-sm-10 { grid-column: span 10; }
   .col-sm-11 { grid-column: span 11; }
   .col-sm-12 { grid-column: span 12; }
-  h1 { font-size: 2rem; }
+  /* h1 { font-size: 2rem; }
   h2 { font-size: 1.75rem; }
   h3 { font-size: 1.5rem; }
   h4 { font-size: 1.25rem; }
   h5 { font-size: 1rem; }
-  h6 { font-size: 0.875rem; }
+  h6 { font-size: 0.875rem; } */
 }
 
 /* 響應式斷點 - 中型設備 */
@@ -560,7 +560,7 @@ aside {
 
 .visual img {
   border: 10px solid #fff;
-  z-index: 99;
+
 }
 
 .visual_intro {
@@ -729,7 +729,7 @@ aside {
 
 .visual {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.36));
-  z-index: 1;
+  z-index: 3;
 }
 
 /* 響應式調整 */
@@ -767,17 +767,31 @@ aside {
   #nav{opacity: 1!important}
   .index_visual{margin-top: 30px;padding: 30px 0;}
   button{padding: 0.5rem 1.5rem;margin: 0 0.3rem 0.5rem;}
-  .visual_info{padding: 15px 0;}
+  .visual_info >div:first-child{display: none!important;}
+  .visual_info >div:nth-child(2){display: block!important;}
+  .visual_info{padding: 20px 0;background-color: unset;}
   .visual_intro {
-  margin: 20px 0 20px calc(-1 * var(--gutter));
+  margin: -80px 0 0 10%;
   clip-path: polygon(0 0, 90% 0%, 100% 10%, 100% 100%, 0 100%);
   justify-content: start;
-  padding: 20px 30px;
+  padding: 120px 20px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
 }
 .index_news{
   margin-top: 30px;
 }
 
+.index_visual>.container{
+justify-content: center;}
+.visual img{
+  aspect-ratio: 4/3;
+  z-index: 99;
+  object-fit: cover;
+  object-position: bottom;
+
+}
  
 }
 
@@ -921,15 +935,21 @@ aside {
   <main>
     <div class="container-fluid index_visual">
       <div class="container grid">
-      <section class="col-6 visual"><img src="images/index_visual.png" alt=""></section>
-      <section class="col-6 visual_intro">
+      <section class="col-6 col-lg-12 visual"><img src="images/index_visual.png" alt=""></section>
+      <section class="col-6 col-lg-11 visual_intro">
         <h1>李國鼎故居</h1>
-        <p class="w4">
-          興建於1935年，原日據時期總督府交通局遞信部部長宿舍，戰後改為臺灣省政府財政廳長宿舍。1972年國鼎先生任財政部艮時遷人居住自至辭世。各界追思故人發起募捐，辜北市政府於2003年公告故居為市定古蹟，並運用捐款在其側新建展示館，前段為先生文物及言行政績陳列區，後段為彈性活動區；故居全館於2010年5月31日對外開放參觀迄今 。
+        <h4 class="w4">
+          興建於1935年，原日據時期總督府交通局遞信部部長宿舍，戰後改為臺灣省政府財政廳長宿舍。
+          1972年國鼎先生任財政部艮時遷人居住自至辭世。各界追思故人發起募捐，辜北市政府於2003年公告故居為
+          市定古蹟，並運用捐款在其側新建展示館，前段為先生文物及言行政績陳列區，後段為彈性活動區；故居全館
+          於2010年5月31日對外開放參觀迄今 。
        
         
-    </p>
-    <div class="visual_info"><img src="images/locate.png" alt=""><h5 class="w5">台北市中正區泰安街2巷3號</h5><button>參觀須知</button><button>場地租借</button></div>
+    </h4>
+    <div class="visual_info">
+      <div style="display: inline-flex;"> <img src="images/locate.png" alt=""><h5 class="w5">台北市中正區泰安街2巷3號</h5></div>
+      <div><button>參觀須知</button><button>場地租借</button></div>
+    </div>
 
       </section>
       </div>
@@ -1001,7 +1021,7 @@ email：ktli@ktli.org.tw</p>
  
 
 </html>
- <script data-brackets-id='42970'>
+ <script data-brackets-id='83290' data-brackets-id='42970'>
     document.addEventListener('DOMContentLoaded', () => {
       const carousel = document.querySelector('#carouselExampleCaptions');
       const inner = carousel.querySelector('.carousel-inner');
@@ -1086,3 +1106,7 @@ email：ktli@ktli.org.tw</p>
 		<script data-brackets-id='77896' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
 		<script data-brackets-id='79162' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
 		<script src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script> -->
+		<script data-brackets-id='83702' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='88256' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script data-brackets-id='99572' src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
+		<script src="phoenix_live_preview_scripts_instrumented_7lqUc6sL.js"></script>
